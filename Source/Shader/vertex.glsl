@@ -1,7 +1,9 @@
 #version 330
 layout (location = 0) in vec3 pos;
 
-void main()                                         
-{ 
-	gl_Position = vec4(pos, 1.0f);
+uniform mat4 model;								
+												
+void main()										
+{												
+	gl_Position = model * vec4(pos, 1.0);	
 }
