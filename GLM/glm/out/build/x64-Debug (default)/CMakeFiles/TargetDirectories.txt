@@ -1,0 +1,2 @@
+E:/Beginner-graphics/learngl/Dependencies/GLM/glm/out/build/x64-Debug (default)/CMakeFiles/edit_cache.dir
+E:/Beginner-graphics/learngl/Dependencies/GLM/glm/out/build/x64-Debug (default)/CMakeFiles/rebuild_cache.dir
