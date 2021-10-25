@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Implementation\Application.cpp" />
     <ClCompile Include="Source\Implementation\Mesh.cpp" />
     <ClCompile Include="Source\Implementation\Shader.cpp" />
-    <ClCompile Include="Source\Implementation\Source.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Source\Shader\fragment.glsl" />

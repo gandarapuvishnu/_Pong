@@ -29,6 +29,7 @@ Shader::Shader(const char* vShaderPath, const char* fShaderPath)
 void Shader::CompileUniforms()
 {
 	uniformModel = glGetUniformLocation(shaderProgram, "model");
+	uniformColor = glGetUniformLocation(shaderProgram, "Color");
 }
 
 Shader::~Shader()

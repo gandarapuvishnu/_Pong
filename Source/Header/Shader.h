@@ -11,7 +11,7 @@ class Shader
 private:
 	GLint success;
 	GLchar infoLog[512];
-	GLuint shaderProgram, vertexShader, fragmentShader, uniformModel;
+	GLuint shaderProgram, vertexShader, fragmentShader, uniformModel, uniformColor;
 	string vertexShaderSource, fragmentShaderSource;
 
 public:
@@ -20,6 +20,7 @@ public:
 	~Shader();
 	void CompileUniforms();
 	GLuint GetModelLocation() { return uniformModel;  }
+	GLuint GetColorLocation() { return uniformColor;  }
 	GLuint CompileShader(GLuint type, const GLchar* shaderSource);
 	GLuint LinkProgram();
 
