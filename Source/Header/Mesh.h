@@ -7,7 +7,8 @@ class Mesh
 private:
 	GLuint MeshId, VAO, VBO, EBO, indexCount;
 public:
-	Mesh(const GLfloat* vertices, const GLuint numVertices, const GLuint* indices, const GLuint numIndices);
+	Mesh();
+	void CreateMesh(const GLfloat* vertices, const GLuint numVertices, const GLuint* indices, const GLuint numIndices);
 	~Mesh();
 	void Render();
 };

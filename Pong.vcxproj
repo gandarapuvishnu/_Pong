@@ -28,6 +28,7 @@
     <None Include="Source\Shader\vertex.glsl" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Header\Application.h" />
     <ClInclude Include="Source\Header\Mesh.h" />
     <ClInclude Include="Source\Header\Shader.h" />
     <ClInclude Include="Source\Header\Window.h" />

@@ -1,7 +1,14 @@
 #include "Mesh.h"
 
-Mesh::Mesh(const GLfloat* vertices, const GLuint numVertices, const GLuint* indices, const GLuint numIndices) :indexCount(numIndices)
+Mesh::Mesh()
 {
+	MeshId = 0;
+}
+
+void Mesh::CreateMesh(const GLfloat* vertices, const GLuint numVertices, const GLuint* indices, const GLuint numIndices)
+{
+	indexCount = numIndices;
+
 	glGenVertexArrays(1, &VAO);
 	glBindVertexArray(VAO);
 	glGenBuffers(1, &VBO);
@@ -18,6 +25,10 @@ Mesh::Mesh(const GLfloat* vertices, const GLuint numVertices, const GLuint* indi
 void Mesh::Render()
 {
 	glBindVertexArray(VAO);
+	// Wireframe
+	// glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+
+	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 	glDrawElements(GL_TRIANGLES, indexCount, GL_UNSIGNED_INT, 0);
 }
 Mesh::~Mesh()
